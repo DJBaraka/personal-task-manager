@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-task {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+li button {
+    border: none;
+    background-color: transparent;
+    color: #d9534f;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
